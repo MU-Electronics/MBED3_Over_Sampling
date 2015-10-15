@@ -1,0 +1,22 @@
+{
+  "name": "mbed3-over-sampling",
+  "version": "0.0.0",
+  "description": "Over sample ADC with ease",
+  "keywords": [
+    "oversample",
+    "adc"
+  ],
+  "author": "Sam Mottley",
+  "repository": {
+    "url": "https://github.com/MU-Electronics/MBED3_Over_Sampling.git",
+    "type": "git"
+  },
+  "homepage": "https://github.com/MU-Electronics/MBED3_Over_Sampling",
+  "licenses": [
+    {
+      "url": "https://spdx.org/licenses/Apache-2.0",
+      "type": "Apache-2.0"
+    }
+  ],
+  "dependencies": {}
+}
