@@ -1,5 +1,6 @@
 #include <map>
 #include <vector>
+#include <string>
 
 
 /**
@@ -61,34 +62,67 @@ bool OverSample::findLookup(int bit, int value)
 
 
 /**
- * PUBLIC: Add a calibration (real voltage vs over sampled voltage) for a bit accuracy
+ * PUBLIC: Add a reading to the lookup table (real voltage vs over sampled voltage) for a bit accuracy
  *
  * @author Sam Mottley sam.mottley@manchester.ac.uk
  */
-int OverSample::calibrationRun(int bit, int realVoltage, int retrievedVoltage)
+bool OverSample::AddLookUpValue(int bit, int realVoltage, int retrievedVoltage)
 {
 
 }
 
 /**
- * PUBLIC: Load calibration into object
+ * PUBLIC: Load lookup table into object
  *
  * @author Sam Mottley sam.mottley@manchester.ac.uk
  */
-int OverSample::calibrate(std::map< int, std::vector< int, int > > lookup)
+bool OverSample::AddLookUpTable(std::map< int, std::vector< int, int > > lookup)
 {
 
 }
 
 /**
- * PUBLIC: Receive the calibration that has been configured
+ * PUBLIC: Receive the lookup table that has been configured or altered
  *
  * @author Sam Mottley sam.mottley@manchester.ac.uk
  */
-int OverSample::calibrateBackup(std::map< int, std::vector< int, int > > lookup)
+int OverSample::LookUpTableBackup(std::map< int, std::vector< int, int > > lookup)
 {
 
 }
+
+
+
+/**
+ * PUBLIC: Polynomial statical averaging
+ *
+ * @author Sam Mottley sam.mottley@manchester.ac.uk
+ */
+bool OverSample::EnablePolynomialAveraging(int terms, std::string equation)
+{
+
+}
+
+/**
+ * PUBLIC: Polynomial statical averaging
+ *
+ * @author Sam Mottley sam.mottley@manchester.ac.uk
+ */
+bool OverSample::EnableYMXCAveraging(int gradient, int constant)
+{
+
+}
+
+
+
+/**
+ *  PUBLIC: Add a fixed gain and offset error
+ */
+bool OverSample::offsetGainError(int offset, int gain)
+{
+
+}
+
 
 /**
  * PUBLIC: Obtain a accurate over sampled result
